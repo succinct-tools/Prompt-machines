@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Prompts Generator</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #prompt {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Back to home</a>
+    <h1>Writing Prompts Generator</h1>
+    <p for="promptList">Choose a list of prompts:</p>
+    <select id="promptList">
+        <option value="list1">Miscellaneous</option>
+        <option value="list2">Concepts</option>
+        <option value="list3">Mouth-made sounds</option>
+        <option value="list4">Transportation</option>
+        <option value="list5">Locations in nature</option>
+        <option value="list6">Really dark themes</option>
+        <option value="list7">Literally light</option>
+        <option value="list8">Just colors</option>
+    </select>
+    <button id="generateBtn">Generate Prompt</button>
+
+    <h2>Current suggestion</h2>
+    <div id="prompt"></div>
+
+    <h2 class="previous">Previous suggestions</h2>
+    <ul id="recent-prompts"></ul>
+
+    <script src="writing-prompts.js"></script>
+</body>
+
+</html>

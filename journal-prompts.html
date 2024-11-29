@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Writing Prompts Generator</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        #prompt {
+            margin-top: 20px;
+            font-size: 1.2em;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="index.html">Back to home</a>
+    <h1>Journal Prompts Generator</h1>
+    <label for="promptList">Choose a list of prompts:</label>
+    <select id="promptList">
+        <option value="list1">About ...</option>
+        <option value="list2">Deep questions</option>
+        <option value="list3">Self-love</option>
+    </select>
+    <button id="generateBtn">Generate Prompt</button>
+
+    <h2>Current suggestion</h2>
+    <div id="prompt"></div>
+
+    <h2 class="previous">Previous suggestions</h2>
+    <ul id="recent-prompts"></ul>
+
+    <script src="journal-prompts.js"></script>
+</body>
+
+</html>
